@@ -26,7 +26,6 @@ $(function () {
 			this.innerHTML = "Play";
 		}
 	});
-	/*
 	$('.slider-team-img').slick({
 		centerMode: true,
 		centerPadding: '0px',
@@ -67,5 +66,4 @@ $(function () {
     		}
   		]
 	});
-	*/
 });
