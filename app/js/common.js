@@ -2,7 +2,7 @@ $(function () {
 	$('nav').mobileMenu({
 		menuIconClassName: ".menu",
 		mobileResolution: 770,
-		menuType: "fixed",
+		menuType: "sticky",
 		offsetToSticky: 50,
 		closeIconClassName: ".close-menu-icon"
 	});
@@ -12,20 +12,18 @@ $(function () {
 		arrows: false,
 		dots: true
 	});
-	//video = document.querySelectorAll('.video-about');
+
 	$video = $('.video-about');
 	$('.btn-video').on("click", function () {
-		console.log("ghgh");
 		if ($video.get(0).paused) {
-			console.log("eeeeee");
 			$video.get(0).play();
-			this.innerHTML = "Pause";
+			$(this).attr('src', 'img/video-pause.svg');
 		} else {
 			$video.get(0).pause();
-			console.log("aaaaaaa")
-			this.innerHTML = "Play";
+			$(this).attr('src', 'img/video-play.svg');
 		}
 	});
+
 	$('.slider-team-img').slick({
 		centerMode: true,
 		centerPadding: '0px',

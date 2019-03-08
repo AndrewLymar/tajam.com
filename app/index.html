@@ -11,8 +11,8 @@
 
 <body>
 	<header class="header">
-		<div class="container">
-			<nav class="menu header-menu flex-row jc-between">
+		<nav class="menu header-menu flex-row jc-center">
+			<div class="container flex-row jc-between">
 				<img src="img/logo.png" alt="logo">
 				<ul class="flex-row ai-center">
 					<li>
@@ -37,7 +37,9 @@
 						<a href="">Contact</a>
 					</li>
 				</ul>
-			</nav>
+			</div>
+		</nav>
+		<div class="container">
 			<div class="banner margin-auto">
 				<div class="banner-slider">
 					<div class="slide flex-col jc-center">
@@ -74,7 +76,7 @@
 				<div class="flex-row col-6 col-12-md centered">
 					<img src="img/brand.png" alt="brand">
 				</div>
-				<div class="col-6 col-12-md">
+				<div class="flex-col col-6 col-12-md ai-center-sm">
 					<h2 class="ta-center-md">Our story</h2>
 					<div class="ta-center-sm">
 						<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p>
@@ -86,12 +88,11 @@
 		</div>
 		<div class="video-about-container">
 			<div class="overlay flex-col centered">
-				<img src="img/video-play.svg" alt="" class="btn-video">
 				<img src="img/video-pause.svg" alt="" class="btn-video">
-				<h3 class="ta-center">Watch our story</h3>
+				<h3 class="ta-center">Aenean sollicitudin, lorem quis bibendum auctor</h3>
 			</div>
 			<video autoplay muted loop class="video-about">
- 	 				<source src="img/video.mp4" type="video/mp4">
+ 	 			<source src="img/video.mp4" type="video/mp4">
 			</video>
 		</div>
 	</section>
@@ -155,7 +156,7 @@
 				<p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
 			</div>
 			<div class="title-decoration-light margin-auto"></div>
-			<div class="employees-cards flex-row jc-between jc-center-sm gap">
+			<div class="employees-cards flex-row jc-between jc-around-md jc-center-sm gap">
 				<div class="employee-card">
 					<div class="employee-img">
 					</div>
@@ -199,7 +200,9 @@
 				<h2>Meet our amazing team</h2>
 				<a href="" class="projects-link flex-row ai-center">
 					<span>See All Project in dribbble</span>
-					<img src="img/right-arrow.svg" alt="right-arrow">
+					<svg width="7" height="11" fill="#545454">
+						<use xlink:href="img/sprite.svg#right-arrow-thick"></use>
+					</svg>
 				</a>
 
 			</div>
@@ -222,7 +225,7 @@
 	</section>
 	<section class="s-reviews">
 		<div class="container flex-row jc-center">
-			<svg width="38" height="30" fill="#ebeaef">
+			<svg width="32" height="26" fill="#ebeaef">
 				<use xlink:href="img/sprite.svg#quote"></use>
 			</svg>
 		</div>
@@ -279,9 +282,9 @@
 		</div>
 	</section>
 	<section class="s-contact">
-		<div class="container flex-row jc-between gap">
-			<div class="contact-form flex-col">
-				<h3>Give us a good news</h3>
+		<div class="container flex-row jc-between jc-center-md gap">
+			<div class="contact-form flex-col jc-center-md">
+				<h3 class="ta-center-md">Give us a good news</h3>
 				<form action="" class="flex-col">
 					<input type="text" name="name" required="required" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" placeholder="Name">
 					<input type="text" name="email" required="required" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="Email">
@@ -291,27 +294,33 @@
 				</form>
 			</div>
 			<div class="brands flex-col">
-				<h3>Our happy client</h3>
-				<div class="brands-images flex-row jc-between ai-center">
+				<h3 class="ta-center-md">Our happy client</h3>
+				<div class="brands-images flex-row jc-between jc-center-sm ai-center gap">
 					<img src="img/zara-logo.png" alt="zara-logo">
 					<img src="img/mango-logo.png" alt="mango-logo">
 					<img src="img/barneys-new-york-logo.png" alt="barneys-new-york-logo">
 					<img src="img/gucci-logo.png" alt="gucci-logo">
+					<img src="img/calvin-klein-logo.png" alt="calvin-klein">
+					<img src="img/adidas-logo.png" alt="adidas">
+					<img src="img/converse-logo.png" alt="converse">
+					<img src="img/puma-logo.png" alt="puma">
+					<img src="img/levis-logo.png" alt="levis-logo">
+					<img src="img/billabong-logo.png" alt="billabong-logo">
 				</div>
 			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="container flex-col">
-			<div class="footer-top flex-row jc-between gap">
-				<div class="about">
+			<div class="footer-top flex-row jc-between jc-around-md jc-center-sm gap">
+				<div class="about flex-col-sm ai-center-md">
 					<img src="img/logo.png" alt="logo">
-					<p>
+					<p class="ta-center-md">
 						lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
 					</p>
 				</div>
 				<div class="contacts flex-col">
-					<h3>Our studio</h3>
+					<h3 class="ta-center-sm">Our studio</h3>
 					<div class="geo flex-row ai-top no-wrap">
 						<svg width="46" height="38" fill="#fff">
 							<use xlink:href="img/sprite.svg#geo"></use>
@@ -319,18 +328,21 @@
 						<span>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</span></div>
 					<div class="tel flex-row ai-center no-wrap">
 						<svg width="17" height="17" fill="#fff">
-						<use xlink:href="img/sprite.svg#call"></use>
-					</svg>
+							<use xlink:href="img/sprite.svg#call"></use>
+						</svg>
 						<span>(+62) 21-2224 3333</span>
 					</div>
 				</div>
 				<div class="socials flex-col">
-					<h3>Stay in touch</h3>
-					<form action="" class="flex-row">
+					<h3 class="ta-center-md">Stay in touch</h3>
+					<form action="" class="flex-row flex-col-md ai-center-md">
 						<input type="text" name="email" required="required" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="Subscribe our newsletter">
-						<button class="flex-row centered"><img src="img/plane.svg" alt=""></button>
+						<button class="flex-row centered">
+								<svg width="25" height="25">
+									<use xlink:href="img/sprite.svg#plane"></use>
+								</svg></button>
 					</form>
-					<ul class="socials-icons flex-row">
+					<ul class="socials-icons flex-row jc-between-md">
 						<li>
 							<a href="" class="flex-row centered">
 								<svg width="14" height="30" fill="#fff">
@@ -370,8 +382,8 @@
 
 				</div>
 			</div>
-			<div class="footer-bottom flex-row jc-between">
-				<ul class="flex-row">
+			<div class="footer-bottom flex-row jc-between jc-center-md ai-center">
+				<ul class="flex-row jc-between-sm gap">
 					<li>
 						<a href="">Help</a>
 					</li>

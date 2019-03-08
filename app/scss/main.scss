@@ -171,6 +171,9 @@ section {
 }
 
 .header-menu {
+	position: absolute;
+	width: 100%;
+	transition: all 0.4s ease;
 	ul {
 		li {
 			margin-right: 25px;
@@ -193,9 +196,20 @@ section {
 	}
 }
 
+.sticky-menu {
+	position: fixed;
+	width: 100%;
+	background: #30235f;
+	z-index: 100;
+	.container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
 .banner {
 	max-width: 770px;
-	margin-top: 150px;
+	margin-top: 230px;
 	color: #fff;
 	h1 {
 		font-family: 'Playfair Display', serif;
@@ -237,19 +251,18 @@ section {
 
 .video-about-container {
 	position: relative;
-	height: 550px;
-	overflow: hidden;
 	.overlay {
 		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: 99%;
 		top: 0;
 		left: 0;
 		background: rgba(48, 36, 84, 0.7);
 		z-index: 4;
-		img {
+		.btn-video {
 			width: 100px;
 			height: 100px;
+			cursor: pointer;
 		}
 		h3 {
 			margin-top: 34px;
@@ -260,8 +273,8 @@ section {
 			color: #fff;
 		}
 	}
-	.about-video-content {
-		position: relative;
+	.video-about {
+		width: 100%;
 	}
 }
 
@@ -419,7 +432,7 @@ section {
 	.sliders {
 		margin-top: 30px;
 		.slider-container {
-			width: 70%;
+			width: 50%;
 			margin: 0 auto;
 			&:last-child {
 				margin-top: 10px;
@@ -666,6 +679,9 @@ footer {
 		ul {
 			li {
 				margin-right: 32px;
+				&:last-child {
+					margin-right: 0;
+				}
 				a {
 					text-transform: uppercase;
 					text-decoration: none;
@@ -675,6 +691,13 @@ footer {
 					}
 				}
 			}
+		}
+		.copyright {
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			letter-spacing: 0.35px;
 		}
 	}
 }

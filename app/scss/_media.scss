@@ -1,21 +1,68 @@
-@media only screen and (max-width: $xl) {}
-
-@media only screen and (max-width: $lg) {
-	.expertise-items {
-		.expertise-item {
-			border: 0;
+	@media only screen and (max-width: $xl) {}
+	
+	@media only screen and (max-width: $lg) {
+		.expertise-items {
+			.expertise-item {
+				border: 0;
+			}
 		}
 	}
-}
-
-@media only screen and (max-width: $md) {}
-
-@media only screen and (max-width: $sm) {
-	.s-our-works {
-		.projects-link {
-			margin-top: 25px;
+	
+	@media only screen and (max-width: $md) {
+		.s-about {
+			h2 {
+				margin-top: 50px;
+			}
+		}
+		.s-contact {
+			.brands {
+				margin-top: 50px;
+			}
+		}
+		footer {
+			.socials {
+				form {
+					button {
+						margin-top: 25px;
+					}
+				}
+			}
+			.copy {
+				margin-top: 25px;
+			}
 		}
 	}
-}
-
-@media only screen and (max-width: $xs) {}
+	
+	@media only screen and (max-width: $sm) {
+		.s-our-works {
+			.projects-link {
+				margin-top: 25px;
+			}
+		}
+		footer {
+			.contacts,
+			.socials {
+				h3 {
+					font-size: 20px;
+					margin-top: 25px;
+				}
+			}
+			.socials {
+				form {
+					button {
+						margin-top: 25px;
+					}
+				}
+			}
+			.footer-bottom {
+				ul {
+					width: 100%;
+					li {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	@media only screen and (max-width: $xs) {}
