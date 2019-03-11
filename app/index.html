@@ -10,59 +10,62 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="header">
 		<nav class="menu header-menu flex-row jc-center">
-			<div class="container flex-row jc-between">
+			<div class="container flex-row jc-between ai-center-md">
 				<img src="img/logo.png" alt="logo">
 				<ul class="flex-row ai-center">
 					<li>
-						<a href="">Home</a>
+						<a href="#header">Home</a>
 					</li>
 					<li>
-						<a href="">About</a>
+						<a href="#about">About</a>
 					</li>
 					<li>
-						<a href="">Expertise</a>
+						<a href="#expertise">Expertise</a>
 					</li>
 					<li>
-						<a href="">Teams</a>
+						<a href="#team">Teams</a>
 					</li>
 					<li>
-						<a href="">Works</a>
+						<a href="#works">Works</a>
 					</li>
 					<li>
-						<a href="">People say</a>
+						<a href="#reviews">People say</a>
 					</li>
 					<li>
-						<a href="">Contact</a>
+						<a href="#contact">Contact</a>
 					</li>
 				</ul>
+				<svg width="32" height="32" fill="#fff" class="menu-icon">
+					<use xlink:href="img/sprite.svg#menu"></use>
+				</svg>
 			</div>
 		</nav>
 		<div class="container">
 			<div class="banner margin-auto">
 				<div class="banner-slider">
-					<div class="slide flex-col jc-center">
+					<div class="banner-slide">
 						<h1 class="ta-center">We Are Awesome Creative Agency</h1>
-						<div class="title-decoration-dark margin-auto"></div>
+						<div class="title-decoration margin-auto"></div>
 						<p class="ta-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 						<button class="button-dark">Learn more</button>
 					</div>
-					<div class="slide flex-col">
-						<h1 class="ta-center">Awesome Creative Agency</h1>
-						<div class="title-decoration-dark margin-auto"></div>
+					<div class="banner-slide">
+						<h1 class="ta-center">This Is Future</h1>
+						<div class="title-decoration margin-auto"></div>
 						<p class="ta-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 						<button class="button-dark">Learn more</button>
 					</div>
-					<div class="slide flex-col">
-						<h1 class="ta-center">Creative Agency</h1>
-						<div class="title-decoration-dark margin-auto"></div>
+					<div class="banner-slide">
+						<h1 class="ta-center">We Are The Best!</h1>
+						<div class="title-decoration margin-auto"></div>
 						<p class="ta-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 						<button class="button-dark">Learn more</button>
 					</div>
-					<div class="slide flex-col">
-						<h1 class="ta-center">Agency</h1>
-						<div class="title-decoration-dark margin-auto"></div>
+					<div class="banner-slide">
+						<h1 class="ta-center">New Agency</h1>
+						<div class="title-decoration margin-auto"></div>
 						<p class="ta-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 						<button class="button-dark">Learn more</button>
 					</div>
@@ -70,7 +73,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="s-about">
+	<section class="s-about" id="about">
 		<div class="container">
 			<div class="flex-row">
 				<div class="flex-row col-6 col-12-md centered">
@@ -96,13 +99,13 @@
 			</video>
 		</div>
 	</section>
-	<section class="s-expertise">
+	<section class="s-expertise" id="expertise">
 		<div class="container">
 			<div class="title-text title-text-dark">
 				<h2>Expertise</h2>
 				<p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
 			</div>
-			<div class="title-decoration-dark margin-auto"></div>
+			<div class="title-decoration margin-auto"></div>
 			<div class="expertise-items flex-row">
 				<div class="expertise-item flex-col col-4 col-6-lg col-12-sm centered">
 					<img src="img/monitor.png" alt="monitor">
@@ -149,13 +152,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-team">
+	<section class="s-team" id="team">
 		<div class="container flex-col">
 			<div class="title-text title-text-light">
 				<h2>Meet our amazing team</h2>
 				<p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
 			</div>
-			<div class="title-decoration-light margin-auto"></div>
+			<div class="title-decoration margin-auto"></div>
 			<div class="employees-cards flex-row jc-between jc-around-md jc-center-sm gap">
 				<div class="employee-card">
 					<div class="employee-img">
@@ -194,7 +197,7 @@
 			<button class="button-dark margin-auto">We are hiring</button>
 		</div>
 	</section>
-	<section class="s-our-works">
+	<section class="s-our-works" id="works">
 		<div class="container">
 			<div class="works-title flex-row jc-between jc-center-sm ai-center">
 				<h2>Meet our amazing team</h2>
@@ -223,65 +226,95 @@
 			<button class="button-light margin-auto">Load more</button>
 		</div>
 	</section>
-	<section class="s-reviews">
+	<section class="s-reviews" id="reviews">
 		<div class="container flex-row jc-center">
 			<svg width="32" height="26" fill="#ebeaef">
 				<use xlink:href="img/sprite.svg#quote"></use>
 			</svg>
 		</div>
 		<div class="sliders">
-			<div class="slider-container">
+			<div class="slider-team-description-container">
 				<div class="slider-team-description">
 					<div class="flex-col slider-item">
 						<div class="slider-text">
 							<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
-							<h3>Joe</h3>
-							<span>CEO TENGKUREP</span>
+							<h3>Jonh Travor</h3>
+							<span>Front-end Dev</span>
 						</div>
 					</div>
 					<div class="flex-col slider-item">
 						<div class="slider-text">
 							<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Cupiditate, iste, inventoreVoluptatem sequi cum ut maiores vel ipsum aliquid a repudiandae neque eius natus id, placeat facere, delectus ea magni numquam harum hic nisi omnis quos sed qui accusantium! Saepe, rerum!</p>
-							<h3>Joe</h3>
-							<span>CEO TENGKUREP</span>
+							<h3>Adam Thomas</h3>
+							<span>Web Designer</span>
 						</div>
 					</div>
 					<div class="flex-col slider-item">
 						<div class="slider-text">
 							<p>Vel ipsum aliquid a repudiandae neque eius natus id, placeat facere, delectus ea magni numquam harum hic nisi omnis quos sed qui accusantium! Saepe, rerum! deleniti nostrum praesentium doloribus. Cupiditate, iste!
 							</p>
-							<h3>Joe</h3>
-							<span>CEO TENGKUREP</span>
+							<h3>Maru Tami</h3>
+							<span>CEO</span>
+						</div>
+					</div>
+					<div class="flex-col slider-item">
+						<div class="slider-text">
+							<p>Iste, inventoreVoluptatem sequi cum ut maiores vel ipsum aliquid a repudiandae neque eius natus id, placeat facere, delectus ea magni numquam harum hic nisi omnis quos sed qui accusantium! Saepe, rerum! Saepe, rerum! deleniti nostrum praesentium doloribus. Cupiditate, iste!</p>
+							<h3>Joe Chan</h3>
+							<span>UI/UX Designer</span>
+						</div>
+					</div>
+					<div class="flex-col slider-item">
+						<div class="slider-text">
+							<p>Delectus ea magni numquam harum hic nisi omnis quos sed qui accusantium! Saepe, rerum! Saepe, rerum! deleniti nostrum praesentium doloribus. Cupiditate, iste!</p>
+							<h3>Pol Bush</h3>
+							<span>Project Manager</span>
+						</div>
+					</div>
+					<div class="flex-col slider-item">
+						<div class="slider-text">
+							<p>Inventore Voluptatem sequi cum ut maiores vel ipsum aliquid a repudiandae neque eius natus id, placeat facere, delectus ea magni numquam harum hic nisi omnis quos sed qui accusantium! Saepe, rerum! Saepe, rerum! deleniti nostrum praesentium doloribus. Cupiditate, iste!</p>
+							<h3>Jack London</h3>
+							<span>PHP Developer</span>
 						</div>
 					</div>
 					<div class="flex-col slider-item">
 						<div class="slider-text">
 							<p>Cupiditate, iste, inventoreVoluptatem sequi cum ut maiores vel ipsum aliquid a repudiandae neque eius natus id, placeat facere, delectus ea magni numquam harum hic nisi omnis quos sed qui accusantium! Saepe, rerum! Saepe, rerum! deleniti nostrum praesentium doloribus. Cupiditate, iste!</p>
-							<h3>Joe</h3>
-							<span>CEO TENGKUREP</span>
+							<h3>Juli Stone</h3>
+							<span>.NET Developer</span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="slider-container">
+			<div class="slider-team-img-container">
 				<div class="slider-team-img">
-					<div class="flex-col slider-item">
-						<img src="img/user1.jpg" alt="user">
+					<div class="slider-item">
+						<img src="img/reviewer1.jpg" alt="reviewer">
 					</div>
-					<div class="flex-col slider-item">
-						<img src="img/user2.jpg" alt="user">
+					<div class="slider-item">
+						<img src="img/reviewer2.jpg" alt="reviewer">
 					</div>
-					<div class="flex-col slider-item">
-						<img src="img/user3.jpg" alt="user">
+					<div class="slider-item">
+						<img src="img/reviewer3.jpg" alt="reviewer">
 					</div>
-					<div class="flex-col slider-item">
-						<img src="img/user4.jpg" alt="user">
+					<div class="slider-item">
+						<img src="img/reviewer4.jpg" alt="reviewer">
+					</div>
+					<div class="slider-item">
+						<img src="img/reviewer5.jpg" alt="reviewer">
+					</div>
+					<div class="slider-item">
+						<img src="img/reviewer6.jpg" alt="reviewer">
+					</div>
+					<div class="slider-item">
+						<img src="img/reviewer7.jpg" alt="reviewer">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="s-contact">
+	<section class="s-contact" id="contact">
 		<div class="container flex-row jc-between jc-center-md gap">
 			<div class="contact-form flex-col jc-center-md">
 				<h3 class="ta-center-md">Give us a good news</h3>
@@ -382,7 +415,7 @@
 
 				</div>
 			</div>
-			<div class="footer-bottom flex-row jc-between jc-center-md ai-center">
+			<div class="footer-bottom flex-row jc-between jc-center-md ai-center gap">
 				<ul class="flex-row jc-between-sm gap">
 					<li>
 						<a href="">Help</a>

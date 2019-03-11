@@ -1,6 +1,6 @@
 $(function () {
 	$('nav').mobileMenu({
-		menuIconClassName: ".menu",
+		menuIconClassName: ".menu-icon",
 		mobileResolution: 770,
 		menuType: "sticky",
 		offsetToSticky: 50,
@@ -10,7 +10,13 @@ $(function () {
 	$('.banner-slider').slick({
 		autoplay: false,
 		arrows: false,
-		dots: true
+		dots: true,
+		dotsClass: 'my-dots',
+		customPaging: function (slider, i) {
+			var slideNumber = (i + 1),
+				totalSlides = slider.slideCount;
+			return '<a class="dot" role="button" title="' + slideNumber + ' из ' + totalSlides + '"><span class="string">' + slideNumber + '/' + totalSlides + '</span></a>';
+		}
 	});
 
 	$video = $('.video-about');
@@ -27,11 +33,11 @@ $(function () {
 	$('.slider-team-img').slick({
 		centerMode: true,
 		centerPadding: '0px',
-		slidesToShow: 3,
-		autoplay: true,
+		slidesToShow: 5,
+		autoplay: false,
 		asNavFor: '.slider-team-description',
-		prevArrow: '<div class="prev"><svg width="32" height="32" viewBox="0 0 32 32"><use xlink: href = "img/sprite.svg#move-to-prev" ></use></svg></div>',
-		nextArrow: '<div class="next"><svg width="32" height="32" viewBox="0 0 32 32"><use xlink: href = "img/sprite.svg#move-to-next"></use></svg ></div> ',
+		prevArrow: '<div class="prev"><svg width="20" height="20" fill="#fff"><use xlink: href = "img/sprite.svg#left-arrow-thin" ></use></svg></div>',
+		nextArrow: '<div class="next"><svg width="20" height="20" fill="#fff"><use xlink: href = "img/sprite.svg#right-arrow-thin"></use></svg ></div> ',
 		responsive: [
 			{
 				breakpoint: 768,
@@ -49,7 +55,7 @@ $(function () {
 	$('.slider-team-description').slick({
 		slidesToShow: 1,
 		asNavFor: '.slider-team-img',
-		autoplay: true,
+		autoplay: false,
 		prevArrow: '',
 		nextArrow: '',
 		responsive: [
