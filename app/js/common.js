@@ -2,13 +2,13 @@ $(function () {
 	$('nav').mobileMenu({
 		menuIconClassName: ".menu-icon",
 		mobileResolution: 770,
-		menuType: "sticky",
+		menuType: "custom",
 		offsetToSticky: 50,
 		closeIconClassName: ".close-menu-icon"
 	});
 
 	$('.banner-slider').slick({
-		autoplay: false,
+		autoplay: true,
 		arrows: false,
 		dots: true,
 		dotsClass: 'my-dots',
@@ -16,17 +16,6 @@ $(function () {
 			var slideNumber = (i + 1),
 				totalSlides = slider.slideCount;
 			return '<a class="dot" role="button" title="' + slideNumber + ' из ' + totalSlides + '"><span class="string">' + slideNumber + '/' + totalSlides + '</span></a>';
-		}
-	});
-
-	$video = $('.video-about');
-	$('.btn-video').on("click", function () {
-		if ($video.get(0).paused) {
-			$video.get(0).play();
-			$(this).attr('src', 'img/video-pause.svg');
-		} else {
-			$video.get(0).pause();
-			$(this).attr('src', 'img/video-play.svg');
 		}
 	});
 
@@ -45,7 +34,8 @@ $(function () {
 					arrows: false,
 					centerMode: false,
 					centerPadding: '0px',
-					slidesToShow: 1
+					slidesToShow: 1,
+					slidesToScroll: 1
 				}
     		}
   		]
@@ -62,12 +52,24 @@ $(function () {
 			{
 				breakpoint: 768,
 				settings: {
-					arrows: true,
+					arrows: false,
 					centerMode: false,
 					centerPadding: '0px',
-					slidesToShow: 1
+					slidesToShow: 1,
+					slidesToScroll: 1
 				}
     		}
   		]
+	});
+
+	$video = $('.video-about');
+	$('.btn-video').on("click", function () {
+		if ($video.get(0).paused) {
+			$video.get(0).play();
+			$(this).attr('src', 'img/video-pause.svg');
+		} else {
+			$video.get(0).pause();
+			$(this).attr('src', 'img/video-play.svg');
+		}
 	});
 });

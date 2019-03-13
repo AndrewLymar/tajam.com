@@ -104,10 +104,13 @@ section {
 	.container {
 		padding-top: 15px;
 	}
+	.nav-container {
+		margin: 0;
+	}
 }
 
 .header-menu {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	transition: all 0.4s ease;
 	ul {
@@ -137,7 +140,7 @@ section {
 	}
 }
 
-.sticky-menu {
+.custom-menu {
 	position: fixed;
 	width: 100%;
 	background: #30235f;
@@ -293,6 +296,7 @@ section {
 				border-bottom: 0;
 			}
 			&-text {
+				max-width: 100%;
 				margin-top: auto;
 				margin-top: 30px;
 				text-align: center;
@@ -659,7 +663,7 @@ footer {
 				font-family: 'Roboto', sans-serif;
 				font-size: 14px;
 				font-weight: 300;
-				line-height: 26px;
+				line-height: 42px;
 				letter-spacing: 0.7px;
 				color: #ffffff;
 			}

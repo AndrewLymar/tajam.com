@@ -71,17 +71,31 @@
 		}
 		.s-reviews {
 			.sliders {
-				.slick-list {
-					.slick-track {
-						.slider-item {
-							.slider-text {
-								margin-bottom: 10px;
+				.slider-team-img-container {
+					width: 90%;
+				}
+				.slider-team-img-container,
+				.slider-team-description-container,
+				{
+					width: 90%;
+					.slider-team-img,
+					.slider-team-description {
+						.slick-list {
+							.slick-track {
+								.slider-item {
+									img {
+										opacity: 1;
+									}
+									.slider-text {
+										margin-bottom: 16px;
+										h3 {
+											//font-size: 20px;
+										}
+									}
+								}
 							}
 						}
 					}
-				}
-				.slider-team-img-container {
-					width: 90%;
 				}
 			}
 		}
@@ -109,6 +123,14 @@
 	}
 	
 	@media only screen and (max-width: $sm) {
+		.s-reviews {
+			.sliders {
+				.slider-team-img-container,
+				{
+					width: 100%;
+				}
+			}
+		}
 		.s-our-works {
 			.projects-link {
 				margin-top: 25px;
