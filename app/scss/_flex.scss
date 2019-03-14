@@ -21,6 +21,13 @@
 	}
 }
 
+.gap-full {
+	>* {
+		border: 0.50rem solid transparent;
+		background-clip: padding-box;
+	}
+}
+
 .col-auto {
 	flex: 1 1 auto;
 }
@@ -155,6 +162,30 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.gap-xl {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+			&:first-child {
+				border-left: 0;
+			}
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+	.gap-full-xl {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+		}
+	}
+	.no-gap-xl {
+		>* {
+			border-left: 0;
+			border-right: 0;
+		}
+	}
 	.col-auto-xl {
 		flex: 1 1 auto;
 	}
@@ -252,6 +283,30 @@
 	.flex-col-lg {
 		display: flex;
 		flex-direction: column;
+	}
+	.gap-lg {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+			&:first-child {
+				border-left: 0;
+			}
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+	.gap-full-lg {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+		}
+	}
+	.no-gap-lg {
+		>* {
+			border-left: 0;
+			border-right: 0;
+		}
 	}
 	.col-auto-lg {
 		flex: 1 1 auto;
@@ -351,6 +406,30 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.gap-md {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+			&:first-child {
+				border-left: 0;
+			}
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+	.gap-full-md {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+		}
+	}
+	.no-gap-md {
+		>* {
+			border-left: 0;
+			border-right: 0;
+		}
+	}
 	.col-auto-md {
 		flex: 1 1 auto;
 	}
@@ -449,6 +528,30 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.gap-sm {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+			&:first-child {
+				border-left: 0;
+			}
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+	.gap-full-sm {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+		}
+	}
+	.no-gap-sm {
+		>* {
+			border-left: 0;
+			border-right: 0;
+		}
+	}
 	.col-auto-sm {
 		flex: 1 1 auto;
 	}
@@ -546,6 +649,30 @@
 	.flex-col-xs {
 		display: flex;
 		flex-direction: column;
+	}
+	.gap-xs {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+			&:first-child {
+				border-left: 0;
+			}
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+	.gap-full-xs {
+		>* {
+			border: 0.50rem solid transparent;
+			background-clip: padding-box;
+		}
+	}
+	.no-gap-xs {
+		>* {
+			border-left: 0;
+			border-right: 0;
+		}
 	}
 	.col-auto-xs {
 		flex: 1 1 auto;

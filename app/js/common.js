@@ -23,7 +23,7 @@ $(function () {
 		centerMode: true,
 		centerPadding: '0px',
 		slidesToShow: 5,
-		autoplay: false,
+		autoplay: true,
 		asNavFor: '.slider-team-description',
 		prevArrow: '<div class="prev"><svg width="20" height="20" fill="#fff"><use xlink: href = "img/sprite.svg#left-arrow-thin" ></use></svg></div>',
 		nextArrow: '<div class="next"><svg width="20" height="20" fill="#fff"><use xlink: href = "img/sprite.svg#right-arrow-thin"></use></svg ></div> ',
@@ -35,7 +35,6 @@ $(function () {
 					centerMode: false,
 					centerPadding: '0px',
 					slidesToShow: 1,
-					slidesToScroll: 1
 				}
     		}
   		]
@@ -45,7 +44,7 @@ $(function () {
 	$('.slider-team-description').slick({
 		slidesToShow: 1,
 		asNavFor: '.slider-team-img',
-		autoplay: false,
+		autoplay: true,
 		prevArrow: '',
 		nextArrow: '',
 		responsive: [
@@ -56,7 +55,6 @@ $(function () {
 					centerMode: false,
 					centerPadding: '0px',
 					slidesToShow: 1,
-					slidesToScroll: 1
 				}
     		}
   		]
