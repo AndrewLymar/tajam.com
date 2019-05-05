@@ -1,13 +1,13 @@
 $(function () {
-	$('nav').mobileMenu({
-		menuIconClassName: ".menu-icon",
+	$('.menu').mobileMenu({
+		menuIconClassName: ".menu__icon",
 		mobileResolution: 770,
 		menuType: "custom",
 		offsetToSticky: 50,
-		closeIconClassName: ".close-menu-icon"
+		closeIconClassName: ""
 	});
 
-	$('.banner-slider').slick({
+	$('.banner__slider').slick({
 		autoplay: true,
 		arrows: false,
 		dots: true,
@@ -60,8 +60,8 @@ $(function () {
   		]
 	});
 
-	$video = $('.video-about');
-	$('.btn-video').on("click", function () {
+	$video = $('.video__html5');
+	$('.video__button').on("click", function () {
 		if ($video.get(0).paused) {
 			$video.get(0).play();
 			$(this).attr('src', 'img/video-pause.svg');

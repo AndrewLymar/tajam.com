@@ -1,97 +1,91 @@
-	@media only screen and (max-width: $xl) {}
-	
-	@media only screen and (max-width: $lg) {
-		.s-about {
-			.video-about-container {
-				.overlay {
-					height: 98%;
-				}
-			}
-		}
-		.s-expertise {
-			.expertise-items {
-				.expertise-item {
-					border: 0;
-				}
+@media only screen and (max-width: $xl) {}
+
+@media only screen and (max-width: $lg) {
+	.s-about {
+		.video-about-container {
+			.overlay {
+				height: 98%;
 			}
 		}
 	}
-	
-	@media only screen and (max-width: $md) {
-		header {
-			.header-menu {
-				justify-content: space-around;
-				background: #30235f;
-				z-index: 100;
-				.container {
-					justify-content: space-around;
-					padding-top: 15px;
-					padding-bottom: 15px;
-				}
-				ul {
-					display: none;
-					position: absolute;
-					top: 65px;
-					width: 100%;
-					margin: 0 auto;
-					flex-direction: column;
-					padding-bottom: 50px;
-					background: #30235f;
-					li {
-						margin: 0;
-						margin-top: 50px;
-						a {
-							font-size: 20px;
-						}
-					}
-				}
-				.menu-icon {
-					display: flex;
-				}
+	.s-expertise {
+		.expertise-items {
+			.expertise-item {
+				border: 0;
 			}
 		}
-		.s-about {
-			h2 {
-				margin-top: 50px;
+	}
+}
+
+@media only screen and (max-width: $md) {
+	.menu {
+		justify-content: space-around;
+		background: #30235f;
+		z-index: 100;
+		.container {
+			justify-content: space-around;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		&__list {
+			display: none;
+			position: absolute;
+			top: 65px;
+			width: 100%;
+			margin: 0 auto;
+			flex-direction: column;
+			padding-bottom: 50px;
+			background: #30235f;
+		}
+		&__item {
+			margin: 0;
+			margin-top: 50px;
+		}
+		&__link {
+			font-size: 20px;
+		}
+		&__icon {
+			display: flex;
+		}
+	}
+	.s-about {
+		h2 {
+			margin-top: 50px;
+		}
+		.video {
+			&__overlay {
+				height: 97%;
 			}
-			.video-about-container {
-				.overlay {
-					height: 97%;
-					.btn-video {
-						width: 30px;
-						height: 30px;
-					}
-					h3 {
-						width: 80%;
-						margin-top: 24px;
-						font-size: 10px;
-					}
-				}
+			&__button {
+				width: 30px;
+				height: 30px;
+			}
+			&__title {
+				width: 80%;
+				margin-top: 24px;
+				font-size: 10px;
 			}
 		}
-		.s-reviews {
-			.sliders {
-				.slider-team-img-container {
-					width: 90%;
-				}
-				.slider-team-img-container,
-				.slider-team-description-container,
-				{
-					width: 90%;
-					.slider-team-img,
-					.slider-team-description {
-						.slick-list {
-							.slick-track {
-								.slider-item {
-									img {
-										opacity: 1;
-									}
-									.slider-text {
-										margin-bottom: 16px;
-										h3 {
-											//font-size: 20px;
-										}
-									}
+	}
+	.s-reviews {
+		.sliders {
+			.slider-team-img-container {
+				width: 90%;
+			}
+			.slider-team-img-container,
+			.slider-team-description-container,
+			{
+				width: 90%;
+				.slider-team-img,
+				.slider-team-description {
+					.slick-list {
+						.slick-track {
+							.slider-item {
+								img {
+									opacity: 1;
+								}
+								.slider-text {
+									margin-bottom: 16px;
 								}
 							}
 						}
@@ -99,67 +93,63 @@
 				}
 			}
 		}
-		.s-reviews {
-			.sliders {
-				.slider-team-description-container {
-					width: 80%;
-				}
-			}
-		}
-		.s-contact {
-			.brands {
-				margin-top: 50px;
-			}
-		}
-		footer {
-			.socials {
-				form {
-					button {
-						margin-top: 25px;
-					}
-				}
+	}
+	.s-reviews {
+		.sliders {
+			.slider-team-description-container {
+				width: 80%;
 			}
 		}
 	}
-	
-	@media only screen and (max-width: $sm) {
-		.s-reviews {
-			.sliders {
-				.slider-team-img-container,
-				{
-					width: 100%;
-				}
-			}
+	.s-contact {
+		.brands {
+			margin-top: 50px;
 		}
-		.s-our-works {
-			.projects-link {
-				margin-top: 25px;
-			}
+	}
+	.footer-socials {
+		&__button {
+			margin-top: 25px;
 		}
-		footer {
-			.contacts,
-			.socials {
-				h3 {
-					font-size: 20px;
-					margin-top: 25px;
-				}
-			}
-			.socials {
-				form {
-					button {
-						margin-top: 25px;
-					}
-				}
-			}
-			.footer-bottom {
-				ul {
-					width: 100%;
-					li {
-						margin: 0;
-					}
-				}
+	}
+}
+
+@media only screen and (max-width: $sm) {
+	.s-reviews {
+		.sliders {
+			.slider-team-img-container,
+			{
+				width: 100%;
 			}
 		}
 	}
-	
-	@media only screen and (max-width: $xs) {}
+	.s-our-works {
+		.projects-link {
+			margin-top: 25px;
+		}
+	}
+	.footer-contacts {
+		&__title {
+			font-size: 20px;
+			margin-top: 25px;
+		}
+	}
+	.footer-socials {
+		&__title {
+			font-size: 20px;
+			margin-top: 25px;
+		}
+		&__button {
+			margin-top: 25px;
+		}
+	}
+	.footer-bottom {
+		&__list {
+			width: 100%;
+		}
+		&__item {
+			margin: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: $xs) {}
