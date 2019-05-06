@@ -225,46 +225,50 @@ section {
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
-	h2 {
+}
+
+.about {
+	&__title {
 		font-family: 'Playfair Display', serif;
 		font-size: 22px;
 	}
-	p {
+	&__text {
 		font-family: 'Roboto', sans-serif;
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 22px;
 	}
-	.button {
+	&__button {
 		margin-top: 15px;
 	}
-	.video {
-		position: relative;
-		&__overlay {
-			position: absolute;
-			width: 100%;
-			height: 99%;
-			top: 0;
-			left: 0;
-			background: rgba(48, 36, 84, 0.7);
-			z-index: 4;
-		}
-		&__button {
-			width: 100px;
-			height: 100px;
-			cursor: pointer;
-		}
-		&__title {
-			margin-top: 34px;
-			font-family: 'Roboto', sans-serif;
-			font-size: 16px;
-			font-weight: 900;
-			text-transform: uppercase;
-			color: #fff;
-		}
-		&__html5 {
-			width: 100%;
-		}
+}
+
+.video {
+	position: relative;
+	&__overlay {
+		position: absolute;
+		width: 100%;
+		height: 99%;
+		top: 0;
+		left: 0;
+		background: rgba(48, 36, 84, 0.7);
+		z-index: 4;
+	}
+	&__button {
+		width: 100px;
+		height: 100px;
+		cursor: pointer;
+	}
+	&__title {
+		margin-top: 34px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	&__html5 {
+		width: 100%;
 	}
 }
 
@@ -275,42 +279,42 @@ section {
 	}
 	.expertise-items {
 		margin-top: 50px;
-		.expertise-item {
-			height: 260px;
-			padding: 35px;
-			border-right: 1px solid #ebebeb;
-			border-bottom: 1px solid #ebebeb;
-			&:nth-child(3),
-			&:nth-child(6) {
-				border-right: 0;
-			}
-			&:nth-last-child(-n+3) {
-				border-bottom: 0;
-			}
-			&-text {
-				max-width: 100%;
-				margin-top: auto;
-				margin-top: 30px;
-				text-align: center;
-				font-family: 'Roboto', sans-serif;
-				h2 {
-					font-size: 14px;
-					font-weight: 900;
-					letter-spacing: 0.7px;
-					text-transform: uppercase;
-					color: #413d4b;
-				}
-				p {
-					margin: 0;
-					margin-top: 25px;
-					font-size: 14px;
-					font-weight: 300;
-					letter-spacing: 0.7px;
-					line-height: 22px;
-					opacity: 0.75;
-					color: #333333;
-				}
-			}
+	}
+	.expertise-item {
+		height: 260px;
+		padding: 35px;
+		border-right: 1px solid #ebebeb;
+		border-bottom: 1px solid #ebebeb;
+		&:nth-child(3),
+		&:nth-child(6) {
+			border-right: 0;
+		}
+		&:nth-last-child(-n+3) {
+			border-bottom: 0;
+		}
+		&__text {
+			max-width: 100%;
+			margin-top: auto;
+			margin-top: 30px;
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+		}
+		&__title {
+			font-size: 14px;
+			font-weight: 900;
+			letter-spacing: 0.7px;
+			text-transform: uppercase;
+			color: #413d4b;
+		}
+		&__description {
+			margin: 0;
+			margin-top: 25px;
+			font-size: 14px;
+			font-weight: 300;
+			letter-spacing: 0.7px;
+			line-height: 22px;
+			opacity: 0.75;
+			color: #333333;
 		}
 	}
 }
@@ -522,8 +526,9 @@ section {
 	}
 }
 
-.s-contact {
-	h3 {
+.contact {
+	flex-basis: 460px;
+	&__title {
 		font-family: 'Playfair Display', serif;
 		font-size: 22px;
 		font-weight: 700;
@@ -531,45 +536,51 @@ section {
 		letter-spacing: 1.1px;
 		color: #413d4b;
 	}
-	.contact-form {
-		flex-basis: 460px;
-	}
-	.brands {
-		flex-basis: 390px;
-		&-images {
-			margin-top: 47px;
-			img {
-				margin-bottom: 45px;
-			}
-		}
-	}
-	form {
+	&__form {
 		margin-top: 35px;
-		input,
-		textarea,
-		button {
-			margin-top: 22px;
-		}
-		input,
-		input::placeholder,
-		textarea::placeholder,
-		textarea {
-			font-family: 'Roboto', sans-serif;
-			font-size: 14px;
-			font-weight: 300;
-			letter-spacing: 0.7px;
-			color: #b3b2b7;
-		}
-		input {
-			height: 45px;
-			padding-left: 20px;
-			padding-right: 20px;
-			border: 1px solid #e6e6e6;
-		}
-		textarea {
-			padding: 22px 20px;
-			border: 1px solid #e6e6e6;
-		}
+	}
+	&__input,
+	&__textarea,
+	&__button {
+		margin-top: 22px;
+	}
+	&__input,
+	&__input::placeholder,
+	&__textarea::placeholder,
+	&__textarea {
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0.7px;
+		color: #b3b2b7;
+	}
+	&__input {
+		height: 45px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border: 1px solid #e6e6e6;
+	}
+	&__textarea {
+		padding: 22px 20px;
+		border: 1px solid #e6e6e6;
+	}
+}
+
+.brands {
+	flex-basis: 390px;
+	&__title {
+		font-family: 'Playfair Display', serif;
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1.1px;
+		color: #413d4b;
+	}
+	&__images {
+		margin-top: 47px;
+	}
+	&__image {
+		margin-bottom: 45px;
 	}
 }
 
